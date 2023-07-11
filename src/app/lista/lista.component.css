@@ -1,0 +1,12 @@
+.mainStyle {
+  padding: 20px;
+}
+
+#blimpiar {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: lightblue;
+  font-size: 20px;
+  font-weight: bold;
+}

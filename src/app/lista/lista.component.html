@@ -1,0 +1,12 @@
+<div class="mainStyle">
+  <h1>Nombre: {{ name }}</h1>
+  <h1>Apellido:{{ lastName }}</h1>
+  <h1>Edad {{ age }}</h1>
+  <input
+    *ngIf="name !== '' && lastName !== ''"
+    (click)="limpiarFormulario()"
+    id="blimpiar"
+    type="button"
+    value="Limpiar"
+  />
+</div>

@@ -1,0 +1,9 @@
+<div *ngIf="heroes.length > 0; else nohaydatos">
+  <ul>
+    <li *ngFor="let heroe of heroes">{{ heroe }}</li>
+  </ul>
+</div>
+
+<ng-template #nohaydatos>
+  <h3>No hay datos disponibles</h3>
+</ng-template>

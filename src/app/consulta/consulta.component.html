@@ -1,0 +1,25 @@
+<div>
+  <table>
+    <tr>
+      <td>Valor a buscar:</td>
+      <td>
+        <input
+          type="text"
+          value="{{ getValorBusqueda }}"
+          (input)="guardarValorBusqueda($event)"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="button" value="Buscar" /></td>
+    </tr>
+  </table>
+
+  <div *ngIf="null; else noHayDatos"></div>
+
+  <ng-template #noHayDatos>
+    <div>
+      <h2>No hay datos para la busqueda</h2>
+    </div>
+  </ng-template>
+</div>
