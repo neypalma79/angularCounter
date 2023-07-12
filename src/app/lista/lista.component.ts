@@ -15,4 +15,10 @@ export class ListaComponent {
     this.lastName = '';
     this.age = 0;
   }
+
+  public llenarFormulario(): void {
+    this.name = 'Ney';
+    this.lastName = 'Palma';
+    this.age = 44;
+  }
 }
