@@ -2,6 +2,7 @@
   <h1>Nombre: {{ name }}</h1>
   <h1>Apellido:{{ lastName }}</h1>
   <h1>Edad {{ age }}</h1>
+  <h1>{{ item }}</h1>
   <input
     *ngIf="name !== '' && lastName !== ''"
     (click)="limpiarFormulario()"

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lista',
@@ -9,6 +9,9 @@ export class ListaComponent {
   public name: string = 'Ney';
   public lastName: string = 'Palma';
   public age: number = 44;
+
+  @Input()
+  public item: string = '';
 
   public limpiarFormulario(): void {
     this.name = '';
