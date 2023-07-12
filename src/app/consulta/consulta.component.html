@@ -11,11 +11,33 @@
       </td>
     </tr>
     <tr>
-      <td colspan="2"><input type="button" value="Buscar" /></td>
+      <td id="tdBoton" colspan="2">
+        <input type="button" value="Buscar" (click)="getProductos()" />
+      </td>
     </tr>
   </table>
 
-  <div *ngIf="null; else noHayDatos"></div>
+  <div *ngIf="productosBusqueda.length > 0; else noHayDatos">
+    <table class="estiloTabla">
+      <thead>
+        <th>Nombre</th>
+        <th>Marca</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+      </thead>
+      <tbody>
+        <tr
+          class="estiloFilaTabla"
+          *ngFor="let productoBusqueda of productosBusqueda"
+        >
+          <td class="estiloColumnaTabla">{{ productoBusqueda.nombre }}</td>
+          <td class="estiloColumnaTabla">{{ productoBusqueda.marca }}</td>
+          <td class="estiloColumnaTabla">{{ productoBusqueda.descripcion }}</td>
+          <td class="estiloColumnaTabla">{{ productoBusqueda.precio }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <ng-template #noHayDatos>
     <div>

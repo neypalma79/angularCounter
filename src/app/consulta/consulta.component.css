@@ -3,3 +3,24 @@ div {
   grid-template-rows: auto auto;
   justify-content: center;
 }
+
+#tdBoton {
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+}
+
+.estiloTabla {
+  margin-top: 50px;
+  border: 2px solid;
+}
+
+.estiloFilaTabla {
+  border: 2px solid;
+}
+
+.estiloColumnaTabla {
+  border: 2px solid;
+}
