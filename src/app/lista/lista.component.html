@@ -3,6 +3,7 @@
   <h1>Apellido:{{ lastName }}</h1>
   <h1>Edad {{ age }}</h1>
   <h1>{{ item }}</h1>
+  <h1>{{ color }}</h1>
   <input
     *ngIf="name !== '' && lastName !== ''"
     (click)="limpiarFormulario()"
@@ -11,6 +12,7 @@
     value="Limpiar"
   />
   <input
+    *ngIf="habilitado"
     (click)="llenarFormulario()"
     id="blimpiar"
     type="button"

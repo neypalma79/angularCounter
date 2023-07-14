@@ -13,6 +13,12 @@ export class ListaComponent {
   @Input()
   public item: string = '';
 
+  @Input()
+  public color: string = '';
+
+  @Input()
+  public habilitado: string = 'false';
+
   public limpiarFormulario(): void {
     this.name = '';
     this.lastName = '';
